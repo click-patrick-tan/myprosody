@@ -16,13 +16,9 @@ def run_praat_file(m, p):
 
     returns : objects outputed by the praat script
     """
-    #sound=p+"/"+"dataset"+"/"+"audioFiles"+"/"+m+".wav"
-    #sourcerun=p+"/"+"dataset"+"/"+"essen"+"/"+"myspsolution.praat"
-    #path=p+"/"+"dataset"+"/"+"audioFiles"+"/"
-	
-	sound = p+'/'+m
-	sourcerun = "/Workspace/Shared/Examples/praat_scripts/myspsolution.praat"
-	path = p
+    sound = p+'/'+m
+    sourcerun = "/Workspace/Shared/Examples/praat_scripts/myspsolution.praat"#sourcerun=p+"/"+"dataset"+"/"+"essen"+"/"+"myspsolution.praat"
+    path = p 
 	
     assert os.path.isfile(sound), "Wrong path to audio file"
     assert os.path.isfile(sourcerun), "Wrong path to praat script"
